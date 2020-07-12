@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendOtpPage">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/onemore"
+        android:layout_height="wrap_content"
+        android:text="One more Step to Go"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/imagev"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"/>
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:id="@+id/imagev"
+        android:layout_marginBottom="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/one"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/phonenumber"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/phonenumber"
+        android:layout_height="wrap_content"
+        android:text="Enter Phone number "
+        android:layout_centerInParent="true"/>
+
+
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edittextphone"
+        android:layout_width="200dp"
+        android:layout_margin="20dp"
+        android:layout_below="@id/phonenumber"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        app:startIconDrawable="@drawable/ic_numbera"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:digits="0987654321"
+        />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittextphone"
+        android:text="Next"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/getNumberButton"/>
+
+</RelativeLayout>
